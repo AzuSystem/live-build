@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+
+update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/azuos/azuos.plymouth 500
+plymouth-set-default-theme -R azuos

@@ -1,0 +1,8 @@
+libgl1-mesa-dri
+libegl-mesa0
+libglx-mesa0
+libgbm1
+mesa-libgallium
+mesa-va-drivers
+mesa-vulkan-drivers
+mesa-utils

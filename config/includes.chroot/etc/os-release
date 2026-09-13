@@ -1,0 +1,13 @@
+NAME="AzuOS"
+PRETTY_NAME="AzuOS"
+ID=azuos
+ID_LIKE=debian
+VERSION="2026.09.13a-deb"
+VERSION_ID="20250913adeb"
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://azusystem.github.io/azuos"
+DOCUMENTATION_URL="https://github.com/AzuSystem/AzuOS/wiki"
+SUPPORT_URL="https://github.com/AzuSystem/AzuOS/issues"
+BUG_REPORT_URL="https://github.com/AzuSystem/AzuOS/issues"
+PRIVACY_POLICY_URL="https://github.com/AzuSystem/AzuOS"
+RELEASE_TYPE=development

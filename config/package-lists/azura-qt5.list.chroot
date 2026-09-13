@@ -1,0 +1,14 @@
+libqt5core5t64
+libqt5gui5t64
+libqt5network5t64
+libqt5widgets5t64
+libqt5qml5
+libqt5quick5
+libqt5svg5
+libqt5multimedia5
+libqt5multimediawidgets5
+qml-module-qtquick2
+qml-module-qtquick-controls
+qml-module-qtquick-controls2
+qml-module-qtgraphicaleffects
+qml-module-qtmultimedia
