@@ -22,10 +22,10 @@ LB_DISTRIBUTION_BINARY="trixie"
 LB_PARENT_DISTRIBUTION_BINARY="trixie"
 
 # Select parent distribution for debian-installer to use
-LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION=""
+LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION="trixie"
 
 # Select archive areas to use
-LB_ARCHIVE_AREAS="main"
+LB_ARCHIVE_AREAS="main contrib non-free non-free-firmware"
 
 # Select parent archive areas to use
 LB_PARENT_ARCHIVE_AREAS="main"

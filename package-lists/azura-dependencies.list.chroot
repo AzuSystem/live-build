@@ -1,10 +1,10 @@
+dmz-cursor-theme
 openbox
 picom
 feh
 dex
-default-cursor-theme
 fonts-inter
-networkmanager
+network-manager
 network-manager-applet
 adwaita-icon-theme
 papirus-icon-theme

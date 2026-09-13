@@ -5,9 +5,7 @@ xserver-xorg-video-fbdev
 xserver-xorg-video-intel
 xserver-xorg-video-nouveau
 xserver-xorg-video-vesa
-xserver-xorg-input-vmmouse
 xinit
-xrandr
 libx11-6
 libxext6
 libxfixes3
@@ -26,7 +24,7 @@ libxcb-icccm4
 libxcb-image0
 libxcb-keysyms1
 libxcb-randr0
-libxcb-render-utils0
+libxcb-render-util0
 libxcb-render0
 libxcb-shape0
 libxcb-shm0
