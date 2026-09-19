@@ -17,6 +17,7 @@ jobs:
                   apt install -y live-build
 
             - name: Prepare environment
+              shell: bash
               run: |
                   shopt -s extglob
                   mkdir config
