@@ -1,0 +1,66 @@
+name: Build an ISO 
+
+on:
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Update & Install tooling
+              run: |
+                  sudo apt update
+                  sudo apt install -y live-build
+
+            - name: Prepare environment
+              run: |
+                  shopt -s extglob
+                  mkdir config
+                  mv !(config) config/
+            
+            - name: Build ISO
+              run: |
+                  lb config
+                  lb build
+        
+            - name: Upload artifact
+              uses: actions/upload-artifact@v4.6.2
+              with:
+                name: azuos-iso
+                path: *.iso
+    release:
+      needs: build
+      runs-on: ubuntu-latest
+      permissions:
+        contents: write
+      steps:
+        - name: Download artifact
+          uses: actions/download-artifact@v4
+          with:
+            name: azuos-iso
+            path: .
+            
+        - name: Draft a Github release
+          uses: softprops/action-gh-release@v3.0.0
+          with:
+            tag_name: ${{ github.ref_name }}-${{ github.run_number }}
+            body: "auto upload"
+            draft: true
+            prerelease: true
+            make_latest: false
+            files: ./*.iso
+          
+        # - name: Compress into split archives
+        #   run: |
+        #     7z a -mx0 -v1500m azuos.7z *.iso
+          
+        # - name: Draft a Github release
+        #   uses: softprops/action-gh-release@v3.0.0
+        #   with:
+        #     tag_name: ${{ github.ref_name }}-${{ github.run_number }}
+        #     body: "auto upload"
+        #     draft: true
+        #     prerelease: true
+        #     make_latest: false
+        #     files: ./*.7z.*
