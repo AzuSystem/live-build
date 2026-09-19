@@ -6,12 +6,15 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
+        container:
+          image: debian:trixie
+          options: --privileged
         steps:
             - uses: actions/checkout@v2
             - name: Update & Install tooling
               run: |
-                  sudo apt update
-                  sudo apt install -y live-build
+                  apt update
+                  apt install -y live-build
 
             - name: Prepare environment
               run: |
@@ -21,8 +24,8 @@ jobs:
             
             - name: Build ISO
               run: |
-                  sudo lb config
-                  sudo lb build
+                  lb config
+                  lb build
         
             - name: Upload artifact
               uses: actions/upload-artifact@v4.6.2
