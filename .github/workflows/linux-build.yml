@@ -28,7 +28,7 @@ jobs:
               uses: actions/upload-artifact@v4.6.2
               with:
                 name: azuos-iso
-                path: *.iso
+                path: ./*.iso
     release:
       needs: build
       runs-on: ubuntu-latest
