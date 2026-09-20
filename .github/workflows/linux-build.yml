@@ -25,12 +25,18 @@ jobs:
             
             - name: Build ISO
               run: |
+                  lb clean --purge
                   lb config \
                       --distribution trixie \
                       --architectures amd64 \
                       --archive-areas "main contrib non-free non-free-firmware" \
                       --debian-installer none \
                       --binary-images iso-hybrid 
+                      --bootappend-live "boot=live components hostname=azuos quiet splash"
+                      --iso-application "AzuOS"
+                      --iso-volume "AZUOS"
+                      --iso-publisher "AzuSystem"
+                      --iso-preparer "AzuSystem"
                   lb build
         
             - name: Upload artifact
