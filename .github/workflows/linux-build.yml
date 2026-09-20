@@ -37,7 +37,7 @@ jobs:
                       --iso-application "AzuOS" \
                       --iso-volume "AZUOS" \
                       --iso-publisher "AzuSystem" \
-                      --iso-preparer "AzuSystem" \
+                      --iso-preparer "AzuSystem" 
                   lb build
         
             - name: Upload artifact
