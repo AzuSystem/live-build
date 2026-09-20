@@ -26,6 +26,7 @@ jobs:
             - name: Build ISO
               run: |
                   lb clean --purge
+                  rm config/binary config/bootstrap config/chroot config/common config/source
                   lb config \
                       --distribution trixie \
                       --architectures amd64 \
@@ -38,6 +39,7 @@ jobs:
                       --iso-volume "AZUOS" \
                       --iso-publisher "AzuSystem" \
                       --iso-preparer "AzuSystem" 
+                  lb config --dump
                   lb build
         
             - name: Upload artifact
