@@ -50,9 +50,9 @@ cd builddir
 
 Then afterwards, simply run
 ```bash
-lb clean --purge
+sudo lb clean --purge
 rm binary bootstrap chroot common source # There are a few issues with the build process so this is a temporary solution
-lb config \
+sudo lb config \
     --distribution trixie \
     --architectures amd64 \
     --archive-areas "main contrib non-free non-free-firmware" \
@@ -64,7 +64,7 @@ lb config \
     --iso-volume "AZUOS" \
     --iso-publisher "AzuSystem" \
     --iso-preparer "AzuSystem"
-lb build
+sudo lb build
 ```
 
 The outputted image should be located directly inside of `builddir/`.
