@@ -6,3 +6,5 @@ mesa-libgallium
 mesa-va-drivers
 mesa-vulkan-drivers
 mesa-utils
+firmware-linux
+firmware-linux-nonfree
