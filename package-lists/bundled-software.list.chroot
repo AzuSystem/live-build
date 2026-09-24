@@ -22,4 +22,5 @@ usbutils
 vim
 strace
 vlc
-
+htop
+btop
