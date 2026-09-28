@@ -1,12 +1,12 @@
 <div align="center">
- <img width="120" alt="AzuOS: If it runs on the Web, it runs on AzuOS" src="https://raw.githubusercontent.com/AzuSystem/azuos-legacy/refs/heads/main/assets/logo.svg">
+ <img width="120" alt="AzuOS Logo" src="https://raw.githubusercontent.com/AzuSystem/azuos-legacy/refs/heads/main/assets/logo.svg">
 	<h1>AzuOS</h1>
-	<p>AzuOS is an Debian-based Linux Distro focused on its unreal design</p>
+	<p>AzuOS is a Debian-based Linux Distro focused on its unreal design</p>
 	<a href='https://azusystem.github.io/azuos'>Visit our Website ↗</a>
 </div>
 
 ## 🤔 What is this repository for?
-This repository hosts the debian live-build configuration and files for building an AzuOS system.
+This repository contains the debian live-build configuration and files for building an AzuOS system.
 
 ## 💻 Build instructions
 
@@ -23,7 +23,7 @@ The following packages are ALSO required for building:
 You can install these by running the following command with _administrative_ permissions:
 
 ```bash
-apt upgrade && apt update
+apt update && apt upgrade
 apt install git live-build # The pkg should automatically ship w/ debootstrap
 ```
 
