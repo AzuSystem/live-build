@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Alacritty",
+        "icon": "file:///usr/share/pixmaps/Alacritty.svg",
+        "path": "/usr/share/applications/Alacritty.desktop"
+    },
+    {
+        "name": "VLC media player",
+        "icon": "file:///usr/share/icons/hicolor/256x256/apps/vlc.png",
+        "path": "/usr/share/applications/vlc.desktop"
+    },
+    {
+        "name": "Chromium",
+        "icon": "file:///usr/share/icons/hicolor/64x64/apps/chromium.png",
+        "path": "/usr/share/applications/firefox.desktop"
+    },
+    {
+        "name": "Kitty",
+        "icon": "file:///usr/share/icons/hicolor/256x256/apps/kitty.png",
+        "path": "/usr/share/applications/kitty.desktop"
+    },
+    {
+        "name": "Dolphin",
+        "icon": "file:///usr/share/icons/hicolor/scalable/apps/org.kde.dolphin.svg",
+        "path": "/usr/share/applications/org.kde.dolphin.desktop"
+    },
+    {
+        "name": "GParted",
+        "icon": "file:///usr/share/icons/hicolor/scalable/apps/gparted.svg",
+        "path": "/usr/share/applications/org.rncbc.qtractor.desktop"
+    }
+]
