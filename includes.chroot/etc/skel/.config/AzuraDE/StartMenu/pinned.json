@@ -1,7 +1,7 @@
 [
     {
         "name": "Alacritty",
-        "icon": "file:///usr/share/pixmaps/Alacritty.svg",
+        "icon": "file:///usr/share/icons/hicolor/scalable/apps/Alacritty.svg",
         "path": "/usr/share/applications/Alacritty.desktop"
     },
     {
@@ -10,12 +10,12 @@
         "path": "/usr/share/applications/vlc.desktop"
     },
     {
-        "name": "Chromium",
+        "name": "Chromium Web Browser",
         "icon": "file:///usr/share/icons/hicolor/64x64/apps/chromium.png",
-        "path": "/usr/share/applications/firefox.desktop"
+        "path": "/usr/share/applications/chromium.desktop"
     },
     {
-        "name": "Kitty",
+        "name": "kitty",
         "icon": "file:///usr/share/icons/hicolor/256x256/apps/kitty.png",
         "path": "/usr/share/applications/kitty.desktop"
     },
@@ -27,6 +27,6 @@
     {
         "name": "GParted",
         "icon": "file:///usr/share/icons/hicolor/scalable/apps/gparted.svg",
-        "path": "/usr/share/applications/org.rncbc.qtractor.desktop"
+        "path": "/usr/share/applications/gparted.desktop"
     }
 ]
